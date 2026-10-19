@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0b0b">
+    <meta name="description" content="Совестная ткань — независимый магазин одежды.">
+    <title>Совестная ткань — одежда и стиль</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="announcement">
+        <span>СОВЕСТНАЯ ТКАНЬ</span>
+        <span>ONLINE STORE · RU</span>
+    </div>
+
+    <header class="site-header">
+        <a href="#" class="wordmark">СОВЕСТНАЯ<br><span>ТКАНЬ®</span></a>
+
+        <nav class="desktop-nav" id="desktopNav">
+            <a href="#catalog" data-i18n="navCatalog">Каталог</a>
+            <a href="#about" data-i18n="navAbout">О нас</a>
+            <a href="#purchase" data-i18n="navPurchase">Покупка</a>
+            <a href="#support" data-i18n="navSupport">Поддержка</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="language-toggle" id="languageToggle">EN</button>
+            <a href="#catalog" class="bag-link">
+                <span>SHOP</span>
+                <span id="productCount">0</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-image"></div>
+            <div class="hero-grain"></div>
+
+            <div class="hero-topline">
+                <span>INDEPENDENT STORE</span>
+                <span>EST. 2026</span>
+            </div>
+
+            <div class="hero-copy">
+                <p class="eyebrow" data-i18n="heroEyebrow">НЕЗАВИСИМЫЙ МАГАЗИН ОДЕЖДЫ</p>
+                <h1 data-i18n="heroTitle">СВОЙ<br><em>СТИЛЬ.</em></h1>
+
+                <div class="hero-bottom">
+                    <p data-i18n="heroDescription">
+                        Вещи, которые хочется носить. Без лишних слов.
+                    </p>
+                    <a href="#catalog" class="round-link">
+                        <span data-i18n="explore">СМОТРЕТЬ КАТАЛОГ</span>
+                        <span class="arrow">↘</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-index">ST / 001<br>ONLINE</div>
+        </section>
+
+        <div class="ticker">
+            <div class="ticker-track">
+                <span>
+                    СОВЕСТНАЯ ТКАНЬ ✳ СОВЕСТНАЯ ТКАНЬ ✳
+                    FIND YOUR STYLE ✳ OWN YOUR LOOK ✳
+                    СОВЕСТНАЯ ТКАНЬ ✳
+                </span>
+            </div>
+        </div>
+
+        <section class="section-wrap" id="catalog">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow" data-i18n="catalogEyebrow">01 / SHOP</p>
+                    <h2 data-i18n="catalogTitle">ВЫБРАННЫЕ<br><em>ВЕЩИ.</em></h2>
+                </div>
+                <p class="section-note" data-i18n="catalogNote">
+                    Каталог обновляется.<br>Следи за поступлениями.
+                </p>
+            </div>
+
+            <div class="catalog-toolbar">
+                <div class="filters" id="filters">
+                    <button class="filter-btn active" data-category="all" data-i18n="filterAll">ВСЁ</button>
+                    <button class="filter-btn" data-category="tops" data-i18n="filterTops">ВЕРХ</button>
+                    <button class="filter-btn" data-category="bottoms" data-i18n="filterBottoms">НИЗ</button>
+                    <button class="filter-btn" data-category="shoes" data-i18n="filterShoes">ОБУВЬ</button>
+                    <button class="filter-btn" data-category="accessories" data-i18n="filterAccessories">АКСЕССУАРЫ</button>
+                </div>
+
+                <label class="search-box">
+                    <span>⌕</span>
+                    <input id="searchInput" type="search" placeholder="Поиск..." data-i18n-placeholder="searchPlaceholder">
+                </label>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+
+            <div class="empty-state" id="emptyState">
+                <p data-i18n="emptyTitle">ПОКА НИЧЕГО НЕТ.</p>
+                <p data-i18n="emptyDescription">Новые вещи появятся здесь.</p>
+            </div>
+        </section>
+
+        <section class="manifesto" id="about">
+            <div class="manifesto-image"></div>
+
+            <div class="manifesto-copy">
+                <p class="eyebrow" data-i18n="aboutEyebrow">02 / ABOUT</p>
+                <h2 data-i18n="aboutTitle">ОДЕЖДА.<br><em>ИНДИВИДУАЛЬНОСТЬ.</em></h2>
+                <p data-i18n="aboutText">
+                    Магазин для тех, кто сам выбирает, как выглядеть.
+                    Свой взгляд. Свой гардероб. Свои правила.
+                </p>
+                <a href="#catalog" class="text-link">
+                    <span data-i18n="aboutLink">СМОТРЕТЬ ВЕЩИ</span>
+                    <span>↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section-wrap purchase-section" id="purchase">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow" data-i18n="purchaseEyebrow">03 / ORDER</p>
+                    <h2 data-i18n="purchaseTitle">КАК<br><em>КУПИТЬ.</em></h2>
+                </div>
+                <p class="section-note" data-i18n="purchaseNote">
+                    Просто выбери вещь<br>и свяжись с продавцом.
+                </p>
+            </div>
+
+            <div class="steps">
+                <article class="step">
+                    <span>01</span>
+                    <h3 data-i18n="step1Title">Выбери вещь</h3>
+                    <p data-i18n="step1Text">Открой товар и посмотри фотографии, размеры и описание.</p>
+                </article>
+                <article class="step">
+                    <span>02</span>
+                    <h3 data-i18n="step2Title">Проверь замеры</h3>
+                    <p data-i18n="step2Text">Сверь указанные размеры перед покупкой.</p>
+                </article>
+                <article class="step">
+                    <span>03</span>
+                    <h3 data-i18n="step3Title">Напиши продавцу</h3>
+                    <p data-i18n="step3Text">Уточни наличие и договорись о покупке в Telegram.</p>
+                </article>
+            </div>
+
+            <div class="seller-contact">
+                <span class="eyebrow">SELLER / TELEGRAM</span>
+                <h3>@necrolic669</h3>
+                <a class="text-link" href="https://t.me/necrolic669" target="_blank" rel="noopener noreferrer">
+                    СВЯЗАТЬСЯ С ПРОДАВЦОМ ↗
+                </a>
+            </div>
+        </section>
+
+        <section class="section-wrap support-section" id="support">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow" data-i18n="supportEyebrow">04 / CONTACT</p>
+                    <h2 data-i18n="supportTitle">НУЖНА<br><em>ПОМОЩЬ?</em></h2>
+                </div>
+                <p class="section-note" data-i18n="supportNote">
+                    Вопросы по сайту или заказу?<br>Напиши нам.
+                </p>
+            </div>
+
+            <div class="steps support-cards">
+                <article class="step">
+                    <span>01 / TELEGRAM</span>
+                    <h3 data-i18n="supportTelegram">Поддержка в Telegram</h3>
+                    <p data-i18n="supportTelegramText">
+                        Свяжись с нами по вопросам заказа или сайта.
+                    </p>
+                    <a class="text-link" href="https://t.me/willyskotina" target="_blank" rel="noopener noreferrer" data-i18n="supportTelegramLink">
+                        НАПИСАТЬ В TELEGRAM ↗
+                    </a>
+                </article>
+
+                <article class="step">
+                    <span>02 / VK</span>
+                    <h3 data-i18n="supportVk">Поддержка во ВКонтакте</h3>
+                    <p data-i18n="supportVkText">
+                        Ещё один способ связаться с нами.
+                    </p>
+                    <a class="text-link" href="https://vk.com/emoreal228" target="_blank" rel="noopener noreferrer" data-i18n="supportVkLink">
+                        ОТКРЫТЬ ВКОНТАКТЕ ↗
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="#" class="wordmark footer-mark">СОВЕСТНАЯ<br><span>ТКАНЬ®</span></a>
+        <p>INDEPENDENT ONLINE STORE · 2026</p>
+
+        <div class="footer-right">
+            <a href="#catalog" data-i18n="navCatalog">Каталог</a>
+            <a href="#purchase" data-i18n="navPurchase">Покупка</a>
+            <a href="#support" data-i18n="navSupport">Поддержка</a>
+            <a href="#" id="backTop" data-i18n="backTop">НАВЕРХ ↑</a>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop hidden" id="productModal">
+        <div class="product-modal">
+            <button class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+
+            <div class="modal-gallery">
+                <div class="modal-main-image" id="modalMainImage"></div>
+                <div class="modal-thumbnails" id="modalThumbnails"></div>
+            </div>
+
+            <div class="modal-info">
+                <p class="eyebrow" id="modalCategory">PRODUCT</p>
+                <h2 id="modalTitle"></h2>
+                <p class="modal-price" id="modalPrice"></p>
+                <p class="modal-description" id="modalDescription"></p>
+
+                <div class="detail-line">
+                    <span data-i18n="detailCondition">СОСТОЯНИЕ</span>
+                    <strong id="modalCondition"></strong>
+                </div>
+
+                <div class="detail-line">
+                    <span data-i18n="detailFit">ПОСАДКА</span>
+                    <strong id="modalFit"></strong>
+                </div>
+
+                <div class="size-block">
+                    <div class="size-heading">
+                        <span data-i18n="chooseSize">ВЫБЕРИ РАЗМЕР</span>
+                        <span data-i18n="sizeGuide">ЗАМЕРЫ НИЖЕ</span>
+                    </div>
+                    <div class="size-options" id="sizeOptions"></div>
+                    <p class="size-help" id="sizeHelp"></p>
+                </div>
+
+                <div class="measurements">
+                    <h3 data-i18n="measurements">ЗАМЕРЫ В СМ</h3>
+                    <div id="measurementRows"></div>
+                </div>
+
+                <button class="buy-button" id="buyButton">
+                    <span data-i18n="buyTelegram">КУПИТЬ В TELEGRAM</span>
+                    <span>↗</span>
+                </button>
+
+                <p class="modal-footnote" data-i18n="buyFootnote">
+                    Наличие уточняется у продавца.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
